@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#main {width: 980px; height: auto; margin: 0 auto;}
+#main div.container {text-align: center; margin: 20px 0;}
+#main div.container h2 {display: inline-block; font-size: 40px; font-weight: 100; letter-spacing: -0.1em; padding-bottom: 10px; margin: 0 auto; border-bottom: 3px solid #231f20;}
+#main div.inner-container {padding: 5px 0 0; font-size: 14px; font-weight: bold; letter-spacing: -0.08em; color: #525252;}
+#main div.inner-container strong {color: #7d2426;}
+
+/*KangSuejin*/
+#KangSuejin {position: relative; width: 100%; height: 1650px;}
+#KangSuejin div.img {position: absolute; top: 0; left: 0; width: 490px;}
+#KangSuejin div.img > img {width: 100%; box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);}
+#KangSuejin div.name-box {position: absolute; top: 0; left: -18px; width: 100%; height: 180px; margin: 0 auto; border-bottom: 3px solid #7d2426; z-index: -1;}
+#KangSuejin div.name-box div.name {position: absolute; top: 0; right: 15%; width: 30%;}
+#KangSuejin div.name-box h3 {display: inline-block; font-size: 50px; font-weight: 100;}
+#KangSuejin div.name-box strong {display: block; font-size: 24px;}
+#KangSuejin div.name-box p {font-size: 16px; font-weight: 700; color: #7d2426;}
+#KangSuejin div.history {position: absolute; top: 230px; left: 55%; width: 50%;}
+#KangSuejin div.history div.sec {line-height: 30px;}
+#KangSuejin div.history div.sec + div.sec {margin: 20px 0;}
+#KangSuejin div.history div.sec > strong {font-size: 20px; margin-bottom: 20px;}
+#KangSuejin div.history div.sec ul > li > strong {display: inline-block; width: 90px;}
+#KangSuejin div.history div.sec ul > li > span {font-size: 14px; font-weight: 600; letter-spacing: -1px;}
+#KangSuejin div.history div.sec ul > li > span.br {margin-left: 90px;}
+
+/*SinMuseop*/
+#SinMuseop {position: relative; width: 100%; height: 1450px;}
+#SinMuseop div.img {position: absolute; top: 0; left: 0; width: 490px;}
+#SinMuseop div.img > img {width: 100%; box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);}
+#SinMuseop div.name-box {position: absolute; top: 0; left: -18px; width: 100%; height: 180px; margin: 0 auto; border-bottom: 3px solid #7d2426; z-index: -1;}
+#SinMuseop div.name-box div.name {position: absolute; top: 0; right: 15%; width: 30%;}
+#SinMuseop div.name-box h3 {display: inline-block; font-size: 50px; font-weight: 100;}
+#SinMuseop div.name-box strong {display: block; font-size: 24px;}
+#SinMuseop div.name-box p {font-size: 16px; font-weight: 700; color: #7d2426;}
+#SinMuseop div.history {position: absolute; top: 230px; left: 55%; width: 50%;}
+#SinMuseop div.history div.sec {line-height: 30px;}
+#SinMuseop div.history div.sec + div.sec {margin: 20px 0;}
+#SinMuseop div.history div.sec > strong {font-size: 20px; margin-bottom: 20px;}
+#SinMuseop div.history div.sec ul > li > strong {display: inline-block; width: 90px;}
+#SinMuseop div.history div.sec ul > li > span {font-size: 14px; font-weight: 600; letter-spacing: -1px;}
+#SinMuseop div.history div.sec ul > li > span.br {margin-left: 90px;}
+
+/*Master*/
+#Master {width: 100%;}
+#Master > ul > li {display: inline-block; position: relative;}
+#Master > ul > li + li {margin-left: 30px;}
+#Master > ul > li:nth-child(4) {margin-left: 0; margin-top: 50px;}
+#Master > ul > li:nth-child(5) {margin-top: 50px;}
+#Master div.info {position: relative; line-height: 40px; letter-spacing: -2px;}
+#Master div.info strong {display: inline-block; margin-left: 150px; font-size: 20px; line-height: 0;}
+#Master div.info strong > span {position: absolute; bottom: 0; font-size: 14px; letter-spacing: 0;}
+#Master div.info span.position {position: absolute; bottom: 0; left: 10px; font-size: 16px; font-weight: 700; color: #7d2426;}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,270 @@
+@charset 'utf-8';
+/* CSS Document */
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+/*모바일에서는 반드시 작성해야함 */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table, blockquote {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+main {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle; max-width: 100%;}
+/*max-width: 100%; 가장 중요함 이미지가 부모속성에 맞춰서 같이 줄어듬 */
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+.pc {display: none !important;}
+/*pc에서는 보여지지 않게*/
+br.only-w {content: '';}
+br.only-w:after {content: '\00a0';}
+div.hidden {position: absolute; left: -9999px;}
+
+
+/* common */
+body {font-family: 'NotoSansKR', '맑은 고딕', 'malgun gothic', '돋움', Dotum, 'Apple SD Gothic Neo', Helvetica, sans-serif; font-weight: 400; font-size: 14px; color: #333333 ; background: #fff;}
+/*폰트를 나열하는것을 펄백컨텐츠 라고 함*/
+#wrap {min-width: 320px; max-width: 850px; margin: 0 auto; overflow: hidden;}
+/*min-width, max-width 를 둘다 지정해줌 / 850px보다 안커지게*/
+#skip-nav {position: fixed; width: 100%; line-height: 40px; text-align: center; top: -42px; background: rgba(0,0,0,.6); color: #fff; font-size: 16px; z-index: 100000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
+/*index*/
+#wrap {width: 100%; height: 100%;}
+#header {position: relative; width: 100%; height: 50px; background: #7d2426; z-index: 100;}
+#header div.box h1 {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#header div.box h1 img {width: 100px; margin: 0 auto; vertical-align: inherit;}
+#header div.box #top-menu a {width: 15px;}
+#header div.box ul > li {}
+#header div.box div.language {position: absolute; top: 39%; right: 10px; width: 65px; height: 19px; line-height: 19px; text-align: center; font-size: 10px; font-weight: 700; color: #fff; background: #000;}
+#header a.menu {position: absolute; left: 15px; top: 50%; transform: translate(0, -50%); font-size: 24px; color: #fff; line-height: 1px;}
+
+#top-menu {width: 100%; height: 100%; display: block;}
+#top-menu ul > li {display: none;}
+#gnb {position: fixed; left: -100%; top: 0; width: 100%; height: 100%; padding-top: 50px; background: #7d2426; color: #fff; z-index: 110; transition: left 0.3s;}
+#gnb.on {left: 0;}
+#gnb > ul {border-bottom: 1px solid rgba(255,255,255,.3); z-index: 160;}
+#gnb > ul > li {position: relative; width: 100%; height: 100%; border-top: 1px solid rgba(255,255,255,.3); z-index: 150;}
+#gnb > ul > li::after {content: ''; position: absolute; top: 50%; right: 2%; width:17px; height: 17px; margin-top: -8.5px; background: url(../img/ico-open.png)no-repeat; background-size: 17px 17px; cursor: pointer;}
+#gnb > ul > li > a {width: 100%; height: 100%; padding-left: 20px; line-height: 35px; font-size: 14px; font-weight: bold;}
+#gnb > ul > li > ul > li {display: none; padding-bottom: 2px;}
+#gnb > ul > li > ul > li.on {display: block;}
+#gnb > ul > li > ul > li > a {display: block; width: 90%; line-height: 35px; font-size: 12px; font-weight: bold; margin-left: 40px; padding-left: 10px; background: rgba(0,0,0,.5); box-sizing: border-box;}
+#gnb div.sns {position: fixed; width: 100%; height: 100vh;}
+#gnb div.sns h1.logo {position: absolute; top: -2%; width: 100px; height: 50px;}
+#gnb div.sns h1.logo > a {width: 100%; height: 100%;}
+#gnb div.sns a.menu {position: absolute; top: -3%; left: 3%; width: 15px;}
+#gnb div.sns a.menu-close {position: absolute; top: -4%; right: 2%; width: 13px;}
+#gnb div.sns ul.sns {position: absolute; top: 35%; right: -50px;  width: 200px; height: 50px; font-size: 15px; color: #fff;}
+#gnb div.sns ul.sns > li {display: inline-block;}
+#gnb div.sns ul.sns > li + li {margin-left: 20px;}
+/*//header*/
+
+#main {width: 100%; height: auto; margin: 0 auto;}
+#main-visual {position: relative; height: 50vw; margin-bottom: 50px; background: #000;}
+#main-visual ul.slide {position: absolute;top: 0; left: 0; width: 100%; height: 100%;}
+#main-visual ul.slide li {position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: none;}
+#main-visual ul.slide li:first-child {display: block;}
+#main-visual ul.slide li img {position: absolute; left: 50%; transform: translate(-50%, 0); width: 100%; height: 100%;}
+#main-visual ul.indicator {position: absolute; left: -40%; bottom: 50px; width: 100%; text-align: center;}
+#main-visual ul.indicator > * {vertical-align: middle;}
+/*인라인 요소를 싹 골라서 vertical-align: middle;*/
+#main-visual ul.indicator {display: inline-block;}
+#main-visual ul.indicator li {display: inline-block; margin-right: 5px;}
+#main-visual ul.indicator li + li {margin-left: 5px;}
+#main-visual ul.indicator li a {display: block; width: 10px; height: 10px; border: 3px solid #fff; background: #fff; border-radius: 20px; overflow: hidden; text-indent: -999px;}
+#main-visual ul.indicator li.on a {border: 3px solid #7d2426; background: #7d2426;}
+/*//main-visual*/
+
+#news {width: 100%; height: 850px; margin: 0 auto;}
+#news div.notice {width: 100%; height: 300px;  padding: 0 15px;}
+#news div.notice h2 {padding: 0 0 20px; font-size: 15px;}
+#news div.notice ul {width: 85%; line-height: 20px;}
+#news div.notice ul > li {position: relative; padding: 10px 0 7px 13px;border-bottom: 1px solid #ddd;}
+#news div.notice ul > li > a {font-size: 14px; padding-left: 10px;}
+#news div.notice ul > li > a::after {content: ''; position: absolute; top: 50%; left: 9px; width: 3px; height: 3px; margin-top: -1.5px; background: #000;}
+#news div.youtube {width: 100%; height: 480px; margin: 0 auto;}
+#news div.youtube > h2 {padding: 0 0 20px 15px; font-size: 15px;}
+#news div.video {width: 100%; height: 480px; padding: 0;}
+#news div.video iframe {width: 100%; height: 100%;}
+/*//news*/
+
+#formarea {display: block; width: 100%; height: 200px; margin: 0 auto; padding: 20px; color: #000; background: #ebebeb;}
+#formarea .innerform {display: block; width: 100%; line-height: 20px;}
+#formarea .innerform strong {font-size: 16px;}
+#formarea .innerform > span {font-size: 13px;}
+#formarea form {display: block;}
+#formarea form input {width: 100%; margin-bottom: 10px;}
+#formarea form input:first-child {width: 90%; height: 30px; padding: 2px; border-style: none;}
+#formarea form input:nth-child(2) {width: 90%; height: 30px; padding: 2px; border-style: none;}
+#formarea form input:nth-child(3) {width: 59%; height: 30px; float: left; padding: 2px; border-style: none;}
+::placeholder {color: #a8a8a8; font-weight: bold; padding-left: 10px;}
+#formarea button {float: left; width: 29.5%; height: 34px; background: #000; color: #fff; font-size: 14px; margin-left: 8px; text-align: center; font-weight: bold; border-style: none; cursor: pointer;}
+/*//formarea*/
+
+#snswrap {position: relative; width: 100%; height: 100%; margin: 0 auto; padding-top: 20px;}
+#snswrap h2 {padding: 0 0 20px 15px; color: #000; font-size: 15px; font-weight: bold; }
+#snswrap div.insta ul {width: 100%; margin-bottom: 20px;}
+#snswrap div.insta ul > li {position: relative; display: inline-block; width: 49%; height: 50%;}
+#snswrap div.insta ul > li > a {width: 49%; height: 50%;}
+#snswrap div.insta ul > li::after {content: ''; position: absolute; bottom: 7px; left: 17px; width: 24px; height: 24px; background: url(../img/ico-ins.png); background-size: 24px 24px;}
+#snswrap div.insta ul > li > a::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; background:rgba(0, 0, 0, 0.4) ; opacity: 0;}
+#snswrap div.insta ul > li > a:hover::before {opacity: 1;}
+#snswrap div.insta ul > li:first-child {margin-bottom: 5px;}
+#snswrap div.facebook > h2 {padding: 0 0 20px 15px;}
+#snswrap div.facebook ul li {position: relative;}
+#snswrap div.facebook ul li:first-child {margin-bottom: 20px;}
+#snswrap div.facebook ul li:first-child img {width: 100%;}
+#snswrap div.facebook ul li:first-child::after {content: ''; position: absolute; bottom: 7px; left: 17px; width: 10px; height: 20px; background: url(../img/ico-fb.png); background-size: 10px 20px;}
+#snswrap div.facebook ul li strong {display: block; position: absolute; top: 20px; left: 20px; font-size: 14px;}
+#snswrap div.facebook ul li:nth-child(2) {display: inline-block; width: 49%; color: #fff;}
+#snswrap div.facebook ul li:nth-child(2) img {width: 100%;}
+#snswrap div.facebook ul li:last-child {display: inline-block; width: 49%}
+#snswrap div.facebook ul li:last-child img {width: 100%;}
+/*//snswrap*/
+
+#video {width: 100%; height: 780px; margin-top: 10px;}
+#video > ul > li > iframe {width: 100%; height: 380px}
+/*//video*/
+
+#foot {width: 100%; margin: 0 auto; border-top: 1px solid #222; clear: both;}
+#foot .info {margin: 30px 0 50px 0; padding: 20px; color: #000; font-size: 12px; text-align: center;}
+#foot .info > p > span.mobile {display: block;}
+#foot .info strong {font-weight: bold; color: #000}
+#foot .info span.copy {display: block; padding-top: 10px;}
+#foot .info .privacy {font-weight: bold; font-size: 15px; color: #000;}
+#foot .foottext {width: 100%; height: 100px; padding: 25px; margin: 20px 0px 0px 0; background: #eee; box-sizing: border-box;}
+#foot .foottext p {font-size: 12px; font-weight: bold; color: #777777;}
+#foot .foottext p strong {display: block; font-size: 13px; line-height: 30px; letter-spacing: -1px; color: #000; word-break:keep-all;}
+/*//foot*/
+
+/*sub_1*/
+#main {width: 100%;}
+#main div.container h3 {font-size: 25px; font-weight: 500;}
+#main div.contents {position: relative; padding: 50px 20px; font-weight: bold; font-size: 16px;}
+#main div.contents p.img {position: static;}
+
+/*sub_2*/
+#main {width: 100%; height: auto;}
+#main div.container h2 {font-size: 25px; font-weight: 500;}
+#KangSuejin {width: 100%; height: 100%; padding: 50px 0;}
+#KangSuejin div.img {position: static; width: 100%;}
+#KangSuejin div.img > img {display: block; width: 95%; box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);}
+#KangSuejin div.name-box {position: static; height: 100px; border-bottom: none;}
+#KangSuejin div.name-box div.name {position: static; width: 100%; padding-top: 24px; text-align: center;}
+#KangSuejin div.name-box h3 {display: inline-block; font-size: 25px; font-weight: 100;}
+#KangSuejin div.name-box strong {display: block; font-size: 12px;}
+#KangSuejin div.name-box p {font-size: 12px; font-weight: 700;}
+#KangSuejin div.history {position: static; display: block; width: 100%; padding: 25px 15px; border-top: 3px solid #7d2426;}
+#KangSuejin div.history div.sec + div.sec {margin: 20px 0;}
+#KangSuejin div.history div.sec > strong {font-size: 14px;}
+#KangSuejin div.history div.sec ul > li > strong {width: 30%;}
+#KangSuejin div.history div.sec ul > li > span {width: 100%; font-size: 12px;}
+#KangSuejin div.history div.sec ul > li > span.br {margin-left: 30%;}
+#SinMuseop {width: 100%; height:100%; padding: 50px 0;}
+#SinMuseop div.img {position: static; width: 95%;}
+#SinMuseop div.img > img {display: block; width: 100%; box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);}
+#SinMuseop div.name-box {position: static; height: 100px; margin: 0 auto;}
+#SinMuseop div.name-box div.name {position: static; width: 100%; padding-top: 24px; text-align: center;}
+#SinMuseop div.name-box h3 {display: inline-block; font-size: 25px; font-weight: 100;}
+#SinMuseop div.name-box strong {display: block; font-size: 12px;}
+#SinMuseop div.name-box p {font-size: 12px; font-weight: 700;}
+#SinMuseop div.history {position: static; width: 100%; height: 100%; padding: 25px 15px;}
+#SinMuseop div.history div.sec {line-height: 30px;}
+#SinMuseop div.history div.sec + div.sec {margin: 20px 0;}
+#SinMuseop div.history div.sec > strong {font-size: 14px;}
+#SinMuseop div.history div.sec ul > li > strong {width: 30%;}
+#SinMuseop div.history div.sec ul > li > span {font-size: 12px;}
+#SinMuseop div.history div.sec ul > li > span.br {margin-left: 30%;}
+#Master {width: 100%; height: 100%;}
+#Master > ul {width: 100%;}
+#Master > ul > li {width: 45%; float: left; position: static;}
+#Master > ul > li > div.img > img {display: block; width: 100%;}
+#Master > ul > li + li {margin-left: 0;}
+#Master > ul > li:nth-child(1) {margin-right: 10%;}
+#Master > ul > li:nth-child(3) {margin-right: 10%;}
+#Master > ul > li:nth-child(4) {margin-left: 0; margin-top: 0;}
+#Master > ul > li:nth-child(5) {margin-top: 0;}
+#Master div.info {width: 100%; padding-left: 10px; position: static; line-height: 40px; letter-spacing: -1px;}
+#Master div.info strong { display: inline; margin-left: 0; font-size: 14px; line-height: 0;}
+#Master div.info strong > span {display: block;position: static; font-size: 12px;}
+#Master div.info span.position {position: static; font-size: 12px; font-weight: bold;}
+
+/*sub3*/
+#concerts ul {width: 100%; height: 100%; padding: 0 10%;}
+#concerts ul > li {display: block; width: 80%; height: 100%;}
+#concerts ul > li + li {margin-left: 0;}
+#concerts ul div.img {width: 100%; height: auto;}
+#concerts ul div.img img {width: 100%;}
+
+/*sub4*/
+#main {width: 100%; height: 100%;}
+#contents {width: 100%;}
+#contents img.mobile {width: 100%; height: 400px;}
+#contents div.title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 666px;}
+#contents div.title > h4 {font-size: 50px;}
+#contents div.tilte-text {margin-top: 20px; text-align: center;}
+#contents div.tilte-text > h5 {display: inline-block; font-size: 24px; font-weight: normal; color: #ffea01;}
+#contents div.tilte-text div.title-list {position: static; width: 100%; height: 138px;}
+#contents div.tilte-text div.title-list ul {width: 300px; margin: 20px auto;}
+#contents div.tilte-text div.title-list li {width: 220px; text-align: left;}
+#detail {width: 100%; height: 100%; clear: both;}
+#detail > ul {width: 100%; height: 100%;}
+#detail > ul li {display: block; width: 100%;  padding: 50px 65px 65px 50px; word-break: keep-all;}
+#detail > ul > li:nth-child(1) {border-top:1px solid #ccc;  border-bottom: 1px solid #ccc;}
+#detail > ul > li:nth-child(3) {padding-top: 50px;}
+#detail > ul > li:nth-child(4) {padding-top: 50px;}
+#note {width: 100%; height: 100%;}
+
+/*sub5*/
+#main div.header > h3 {font-size: 25px; font-weight: 500;}
+#main div.inner-header {border: none; padding: 5px 0 20px;}
+#contents {margin: 20px 0 0;}
+#contents > img {width: 100%;}
+#contents div.cont {display: block; float: inherit; width: 95%; padding: 20px 15px 50px; font-size: 12px; font-weight: bold;}
+#contents div.cont-2 {margin-top: 50px;}
+#contents div.cont-2 > img {width: 100%;}
+#contents div.cont .tit {font-size: 14px; line-height: 40px;}
+
+/*sub6*/
+#notice div.search {position: static; width: 100%; height: auto; margin: 0 auto; padding-top: 20px;}
+#notice div.search p {position: static; font-size: 14px; text-align: center;}
+#notice div.search p span::after {margin-top: -7px;}
+#notice div.search form {position: static; text-align: center;}
+#notice div.search fieldset {float: inherit; width: 100%;}
+#notice div.search button {display: block; float: inherit; width: 262px; margin: 0 auto;}
+#notice div.board-list div.cont strong.tit {font-size: 12px; font-weight: bold;}
+#notice div.board-list div.cont span {font-size: 12px; font-weight: bold;}
+#notice div.paginate a.more {width: 27px; height: 27px; background-size: 27px 27px;}
+
+@media screen and (max-width:420px) {
+	#gnb div.sns ul.sns {top: 40%;}
+	#gnb div.sns a.menu-close {top: -5%;}
+	#gnb div.sns a.menu {top: -4%;}
+    #news div.notice ul > li > a {font-size: 11px;}
+	#news div.notice {height: 78vw;}
+	#news div.video {height: 300px;}
+	#news {height: 650px;}
+	#snswrap div.insta ul {padding-left: 1px;}
+	#video {height: 630px;}
+	#video > ul > li > iframe {height: 300px;}
+	#main-visual ul.indicator {bottom: 5vw;}
+	#main-visual ul.indicator li a {border: 2px;}
+	#main-visual ul.indicator li.on a {border: 2px;}
+	#main-visual ul.indicator li + li {margin-left: 0;}
+	/*sub*/
+	#KangSuejin div.history div.sec ul > li > strong {font-size: 12px;}
+	#KangSuejin div.history div.sec ul > li > span {font-size: 9px;}
+	#SinMuseop div.history div.sec ul > li > strong {font-size: 12px;}
+	#SinMuseop div.history div.sec ul > li > span {font-size: 9px;}
+	
+}
+@media screen and (max-width:320px) {
+	#gnb div.sns a.menu-close {top: -6%;}
+}
+
+

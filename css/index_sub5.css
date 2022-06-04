@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#main {width: 980px; margin: 0 auto;}
+#main div.header {text-align: center; margin: 20px 0;}
+#main div.header > h3 {display: inline-block; font-size: 40px; font-weight: 100; letter-spacing: -0.1em; padding-bottom: 10px; margin: 0 auto; border-bottom: 3px solid #231f20;}
+#main div.inner-header {padding: 5px 0 50px; font-size: 14px; font-weight: bold; letter-spacing: -0.08em; color: #525252; border-bottom: 1px solid #7d2426;}
+#main div.inner-header strong {color: #7d2426;}
+#contents {margin: 30px 0 0;}
+#contents div.cont {display: block; float: right; width: 48%; font-size: 15px; letter-spacing: -0.1em;}
+#contents div.cont-2 {margin-top: 50px;}
+#contents div.cont .tit {font-size: 18px; line-height: 40px;}
+
+
+
+
+
+
+
+
+
+
+

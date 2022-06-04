@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+#main {width: 980px; height: auto; margin: 0 auto;}
+#main div.container {text-align: center; margin: 20px 0;}
+#main div.container h3 {display: inline-block; font-size: 40px; font-weight: 100; letter-spacing: -0.1em; padding-bottom: 10px; margin: 0 auto; border-bottom: 3px solid #231f20;}
+#main div.inner-container {padding: 5px 0 0; font-size: 14px; font-weight: bold; letter-spacing: -0.08em; color: #525252;}
+#main div.inner-container strong {color: #7d2426;}
+#main div.contents {position: relative; padding: 50px 0; font-weight: 500; font-size: 16px;}
+#main div.cont-text {letter-spacing: -0.1em;}
+#main div.contents p.img {position: absolute; top: 10%; right: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

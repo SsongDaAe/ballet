@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#main {width: 980px; height: auto; margin: 0 auto;}
+#main div.container {text-align: center; margin: 20px 0 0;}
+#main div.container h2 {display: inline-block; font-size: 40px; font-weight: 100; letter-spacing: -0.1em; padding-bottom: 10px; margin: 0 auto; border-bottom: 3px solid #231f20;}
+#main div.inner-container {padding: 5px 0 30px 0; font-size: 14px; font-weight: bold; letter-spacing: -0.08em; color: #525252; }
+#main div.inner-container strong {color: #7d2426;}
+
+/* #contents */
+#contents {position: relative; width: 100%; margin: 0 auto;}
+#contents div.title {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 666px;}
+#contents div.title > h4 {font-size: 64px; color: #fff; text-shadow: 3px 3px rgba(0,0,0,0.5); text-align: center; letter-spacing: -1px;}
+#contents div.tilte-text {width:100%; height: 100%; margin-top: 50px; padding-top: 30px; border-top: 1px solid #fff;}
+#contents div.tilte-text > h5 {display: inline-block; font-size: 24px; color: #ffea01;}
+#contents div.tilte-text div.title-list {position: absolute; top: 85%; right: 0; color: #fff; width: calc(100% - 135px);}
+#contents div.tilte-text div.title-list ul {width: 700px;}
+#contents div.tilte-text div.title-list li {position: relative; display: inline-block; width: 253px; margin-top: 5px; padding: 0 0 0 10px; font-size: 14px; float: left; letter-spacing: -2px; box-sizing: border-box;}
+#contents div.tilte-text div.title-list li:nth-child(4) {width: 285px;}
+#contents div.tilte-text div.title-list li:nth-child(6) {width: 285px;}
+#contents div.tilte-text div.title-list li::before {content: ''; position: absolute; top: 50%; left: 0; width: 4px; height: 4px; background-color: #fff; border-radius: 50%;}
+
+/* #detail */
+#detail {width: 100%; height: 100%; margin: 85px auto;}
+#detail > ul {overflow: hidden;}
+#detail > ul > li {display: inline-block; width: 50%; padding: 0 65px 65px 50px; letter-spacing: -0.5px; box-sizing: border-box; float: left;}
+#detail > ul > li:nth-child(2) {border-left: 1px solid #ccc;}
+#detail > ul > li:nth-child(3) {padding-top: 20px; border-top: 1px solid #ccc;}
+#detail > ul > li:nth-child(4) {padding-top: 20px; border-top: 1px solid #ccc; border-left: 1px solid #ccc;}
+#detail > ul > li > h4 {margin-bottom: 50px; font-size: 34px; text-align: center; color: #7d2426;}
+#detail > ul > li h5 {position: relative; font-size: 17px; padding-left: 15px; box-sizing: border-box;}
+#detail > ul > li h5::before {content: ''; position: absolute; top: 50%; left: 0; width: 4px; height: 4px; background-color: #000; border-radius: 100%;}
+#detail > ul > li h6 {margin-top: 8px; padding-left: 15px; box-sizing: border-box; font-size: 14px; font-weight: normal; letter-spacing: -1px;}
+#detail > ul > li span {display: inline-block; margin: 11px 15px; padding: 2px 6px; border: 1px solid #007b80; font-size: 15px; font-weight: 700; color: #007b80;}
+#detail > ul > li span.limit {border-color: #c66d6f; color: #c66d6f;}
+
+/* #note */
+#note {width: 100%; height: 230px; margin: 0 auto; padding:30px 50px; background-color: #eaeaea; box-sizing: border-box;}
+#note li {position: relative; padding-left: 15px; box-sizing: border-box; letter-spacing: -1px;}
+#note li::before {content: ''; position: absolute; top: 50%; left: 0; width: 4px; height: 4px; background: #000; border-radius: 50%;}
+#note li > span {margin-left: 5px;}
+#note li.cap {padding: 0}
+#note li.cap::before {display: none;}
+#note li.cap strong:nth-child(1) {display: inline-block; margin-top: 10px;}
+#note li.cap > span {font-weight: bold;}
+#note li.cap > span:last-child {padding: 10px;}
+#note li.cap > strong::before {content: "※"; display: inline; width: 0; height: 0; position: static; border: none; background-color: transparent; border-radius: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
